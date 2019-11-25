@@ -1,0 +1,26 @@
+{
+  "name": "sap003-md-links",
+  "version": "1.0.0",
+  "description": "library to find links in .md format",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e-v-s/SAP003-md-links.git"
+  },
+  "keywords": [
+    "md",
+    "links",
+    "node",
+    "regex",
+    "javascript"
+  ],
+  "author": "evs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/e-v-s/SAP003-md-links/issues"
+  },
+  "homepage": "https://github.com/e-v-s/SAP003-md-links#readme"
+}
