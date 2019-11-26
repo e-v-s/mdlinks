@@ -19,6 +19,9 @@
   ],
   "author": "evs",
   "license": "ISC",
+  "lib": {
+    "md-links": "cli.js"
+  },
   "bugs": {
     "url": "https://github.com/e-v-s/SAP003-md-links/issues"
   },
