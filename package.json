@@ -19,11 +19,18 @@
   ],
   "author": "evs",
   "license": "ISC",
-  "lib": {
+  "bin": {
     "md-links": "cli.js"
   },
   "bugs": {
     "url": "https://github.com/e-v-s/SAP003-md-links/issues"
   },
-  "homepage": "https://github.com/e-v-s/SAP003-md-links#readme"
+  "homepage": "https://github.com/e-v-s/SAP003-md-links#readme",
+  "dependencies": {
+    "md-links": "^0.1.0"
+  },
+  "devDependencies": {},
+  "directories": {
+    "lib": "lib"
+  }
 }
