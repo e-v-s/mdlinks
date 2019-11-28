@@ -4,7 +4,8 @@
   "description": "library to find links in .md format",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "eslint --ignore-path .gitignore . --ext .js lib/ --fix",    
+    "test": "jest --coverage"
   },
   "repository": {
     "type": "git",
@@ -29,7 +30,16 @@
   "dependencies": {
     "md-links": "^0.1.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.1",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0"
+  },
   "directories": {
     "lib": "lib"
   }
