@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.08% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/13</span>
+        <span class='fraction'>13/13</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">23.08% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/13</span>
+        <span class='fraction'>13/13</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -70,18 +70,18 @@
 <a name='L22'></a><a href='#L22'>22</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -90,19 +90,19 @@
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const fs = require('fs')
 &nbsp;
-const mdlinks = <span class="fstat-no" title="function not covered" >(f</span>ile) =&gt; {
-  const obj = <span class="cstat-no" title="statement not covered" >[]</span>
-  let arrayLinks = <span class="cstat-no" title="statement not covered" >[]</span>
-<span class="cstat-no" title="statement not covered" >  return new Promise(<span class="fstat-no" title="function not covered" >(r</span>esolve, reject) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    fs.readFile(file, 'utf8', <span class="fstat-no" title="function not covered" >(e</span>rr, data) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >      if (err) {</span>
-<span class="cstat-no" title="statement not covered" >        reject(err)</span>
+const mdlinks = (file) =&gt; {
+  const obj = []
+  let arrayLinks = []
+  return new Promise((resolve, reject) =&gt; {
+    fs.readFile(file, 'utf8', (err, data) =&gt; {
+      if (err) {
+        reject(err)
       } else {
-<span class="cstat-no" title="statement not covered" >        arrayLinks = data.match(/\[(.*?)\]\((.*?)\)/g)</span>
-<span class="cstat-no" title="statement not covered" >        arrayLinks.forEach(<span class="fstat-no" title="function not covered" >li</span>nk =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >          obj.push({ text: `${link.match(/(?&lt;=\[).+?(?=\])/g)}`, href: `${link.match(/(?&lt;=\().+?(?=\))/g)}` })</span>
+        arrayLinks = data.match(/\[(.*?)\]\((.*?)\)/g)
+        arrayLinks.forEach(link =&gt; {
+          obj.push({ text: `${link.match(/(?&lt;=\[).+?(?=\])/g)}`, href: `${link.match(/(?&lt;=\().+?(?=\))/g)}` })
         })
-<span class="cstat-no" title="statement not covered" >        resolve(obj)</span>
+        resolve(obj)
       }
     })
   })
@@ -115,7 +115,7 @@ module.exports = mdlinks
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu Nov 28 2019 17:16:06 GMT-0300 (-03)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Nov 29 2019 14:08:56 GMT-0300 (-03)
 </div>
 </div>
 <script src="prettify.js"></script>

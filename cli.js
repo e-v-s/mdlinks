@@ -5,4 +5,4 @@ const mdlinks = require('./lib/index.js')
 
 mdlinks(args[0])
   .then(obj => console.log(obj))
-  .catch(console.error)
+  .catch(err => console.log(err))
