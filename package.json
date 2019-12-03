@@ -38,9 +38,7 @@
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-standard": "^4.0.1",
-    "jest": "^24.9.0",
-    "url-exists-deep": "^1.1.1",
-    "valid-url": "^1.0.9"
+    "jest": "^24.9.0"
   },
   "directories": {
     "lib": "lib"
