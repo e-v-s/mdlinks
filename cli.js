@@ -17,4 +17,3 @@ mdlinks(args[0], args[1])
    }
  })
  .catch(err => console.log(err))
-

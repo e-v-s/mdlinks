@@ -26,8 +26,8 @@ Portanto, o objetivo além de acessar os links destes arquivos, também é o de 
 
 No terminal, digite `npm install e-v-s/md-links`
 
-Após a instalação, você pode utilizar a biblioteca da seginte maneira:
+Após a instalação, você pode utilizar a biblioteca da seginte maneira (lembrando que esta biblioteca lê apenas arquivos com a aextensão **.md**):
 
-Para ter acesso apenas aos links, digite no terminal `md-links caminho-do-arquivo`, isto retornará uma array com objetos contento `text`, para o título do link, e `href`, para o link propriamente dito.
+Para ter acesso apenas aos links, digite no terminal `md-links caminho-do-arquivo/arquivo.md`, isto retornará uma array com objetos contento `text`, para o título do link, e `href`, para o link propriamente dito.
 
-Para ter acesso aos links com a validação usando *HTTP status code* digite `md-links caminho-do-arquivo --validate`, o que retorna, além de `text` e `href`, a propriedade `status` com o status da url.
+Para ter acesso aos links com a validação usando *HTTP status code* digite `md-links caminho-do-arquivo/arquivo.md --validate`, o que retorna, além de `text` e `href`, a propriedade `status` com o status da url.
